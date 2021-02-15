@@ -10,8 +10,7 @@
 
 .greedy button {
   align-self: stretch;
-  transition: all .4s ease-out;
-  padding: 0 0 0 16px;
+  padding: 0 8px 0;
   outline: 0;
   border: 0;
   font-size: 16px;
@@ -26,11 +25,20 @@
     text-decoration: underline;
   }
 
+  &:focus {
+    background: $nhsuk-focus-color;
+    color: $nhsuk-focus-text-color;
+
+    .nhsuk-icon {
+      fill: $nhsuk-focus-text-color;
+    }
+  }
+
   .nhsuk-icon {
     fill: white;
     transform: rotate(90deg);
     float: right;
-    margin-right: -6px;
+    margin-right: -8px;
   }
 }
 
