@@ -3,8 +3,13 @@
 
 // Components that are not in the NHS.UK frontend library
 @import 'components/related-nav';
-@import 'components/greedy-nav';
 
 ///////////////////////////////////////////
 // Add your custom CSS/Sass styles below... 
 ///////////////////////////////////////////
+
+.app-u-hide-on-desktop {
+  @include mq($from: desktop) {
+    display: none;
+  }
+}

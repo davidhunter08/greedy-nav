@@ -1,0 +1,172 @@
+// Import NHS.UK frontend library
+@import 'node_modules/nhsuk-frontend/packages/nhsuk';
+
+.greedy {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.greedy button {
+  align-self: stretch;
+  transition: all .4s ease-out;
+  padding: 0 0 0 16px;
+  outline: 0;
+  border: 0;
+  font-size: 16px;
+  background: transparent;
+  color: $color_nhsuk-white;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  .nhsuk-icon {
+    fill: white;
+    transform: rotate(90deg);
+    float: right;
+    margin-right: -6px;
+  }
+}
+
+.greedy button.hidden {
+  display: none;
+}
+
+ul.links {
+  display: flex;
+  justify-content: flex-start;
+  flex: 1;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+ul.links li {
+  flex: none;
+  list-style: none;
+  margin: 0;
+}
+
+ul.links li a {
+  font-size: 16px;
+  color: $color_nhsuk-white;
+  display: inline-block;
+  margin: 0;
+  margin-right: 32px;
+  text-decoration: none;
+  padding: 16px 0;
+
+  @include mq($until: desktop) {
+    margin-right: 24px;
+    padding: 12px 0;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+ul.hidden-links {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0;
+  padding: 0;
+  background: $color_nhsuk-blue;
+  position: relative;
+
+  & > *:first-child {
+    margin-top: 8px;
+  }
+
+  & > *:nth-last-child(2) {
+    margin-bottom: 8px;
+  }
+}
+
+ul.hidden-links li a {
+  font-size: 16px;
+  color: $color_nhsuk-white;
+  display: inline-block;
+  padding: 12px 0;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+ul.hidden-links.hidden {
+  display: none;
+}
+
+ul.hidden-links li {
+  padding: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @include mq($from: desktop) {
+    margin-right: 32px;
+    display: inline-block;
+  }
+}
+
+.greedy-nav__button--close {
+  font-size: 16px;
+  position: absolute;
+  right: -8px;
+  top: 5px;
+  padding: 11px 0;
+  line-height: 1.5;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  color: $color_nhsuk-white;
+  cursor: pointer;
+
+  .nhsuk-icon {
+    fill: white;
+    transform: rotate(90deg);
+    float: right;
+  }
+}
+
+.app-u-hide-on-desktop {
+  @include mq($from: desktop) {
+    display: none;
+  }
+}
+
+
+// Breadcrumb
+
+.nhsuk-breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin-top: 24px;
+  margin-bottom: -4px;
+
+  @include mq($until: desktop) {
+    margin-bottom: -8px;;
+  }
+}
+
+// Main wrapper 
+
+.nhsuk-main-wrapper {
+  @include nhsuk-responsive-padding(5, 'bottom');
+  @include nhsuk-responsive-padding(5, 'top');
+}
+
+// Heading adjustements
+
+h1 {
+  @include mq($until: desktop) {
+    margin-bottom: nhsuk-spacing(5);
+  }
+}

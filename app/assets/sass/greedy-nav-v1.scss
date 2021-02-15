@@ -1,5 +1,10 @@
+// Import NHS.UK frontend library
+@import 'node_modules/nhsuk-frontend/packages/nhsuk';
+
 .greedy-nav {
   background: $color_nhsuk-blue;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
   
   a {
     display: block;
@@ -50,7 +55,8 @@
   }
 
   .greedy-nav__button--close {
-    top: 12px;
+    padding: 0;
+    top: 16px;
   }
   
   .visible-links {
@@ -72,7 +78,7 @@
     left: 0px;
     width: 100%;
     margin: 0;
-    padding: 12px 0;
+    padding: 8px 0;
     
     li {
       display: block;
@@ -87,9 +93,4 @@
   .hidden {
     display: none;
   }
-}
-
-.greedy-nav__container {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  position: relative;
 }
