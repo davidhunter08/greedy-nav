@@ -68,11 +68,10 @@ ul.links li a {
   margin: 0;
   margin-right: 32px;
   text-decoration: none;
-  padding: 16px 0;
+  padding: 12px 0;
 
   @include mq($until: tablet) {
     margin-right: 24px;
-    padding: 12px 0;
   }
 
   &:hover {
