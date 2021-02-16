@@ -8,8 +8,8 @@
 // Add your custom CSS/Sass styles below... 
 ///////////////////////////////////////////
 
-.app-u-hide-on-desktop {
-  @include mq($from: desktop) {
+.app-u-hide-on-tablet {
+  @include mq($from: tablet) {
     display: none;
   }
 }
