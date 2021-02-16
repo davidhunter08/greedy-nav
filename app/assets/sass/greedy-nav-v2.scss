@@ -156,9 +156,11 @@ ul.hidden-links li {
 .nhsuk-breadcrumb {
   background: transparent;
   padding: 0;
-  margin-top: 20px;
+  margin-top: 24px;
+  margin-bottom: -8px;
 
   @include mq($until: desktop) {
+    margin-top: 20px;
     margin-bottom: -4px;
   }
 }
@@ -166,8 +168,13 @@ ul.hidden-links li {
 // Main wrapper 
 
 .nhsuk-main-wrapper {
-  @include nhsuk-responsive-padding(5, 'bottom');
-  @include nhsuk-responsive-padding(5, 'top');
+  padding-top: nhsuk-spacing(6);
+  padding-bottom: nhsuk-spacing(6);
+
+  @include mq($until: desktop) {
+    padding-top: nhsuk-spacing(4);
+    padding-bottom: nhsuk-spacing(4);
+  }
 }
 
 // Heading adjustments
