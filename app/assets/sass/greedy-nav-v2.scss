@@ -21,10 +21,6 @@
   align-items: center;
   cursor: pointer;
 
-  @include mq($until: tablet) {
-    font-size: 14px;
-  }
-
   &:hover {
     text-decoration: underline;
   }
@@ -77,7 +73,6 @@ ul.links li a {
   @include mq($until: tablet) {
     margin-right: 24px;
     padding: 12px 0;
-    font-size: 14px;
   }
 
   &:hover {
@@ -101,26 +96,6 @@ ul.hidden-links {
   }
 }
 
-ul.hidden-links li a {
-  font-size: 16px;
-  color: $color_nhsuk-white;
-  display: inline-block;
-  padding: 12px 0;
-  text-decoration: none;
-
-  @include mq($until: tablet) {
-    font-size: 14px;
-  }
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-ul.hidden-links.hidden {
-  display: none;
-}
-
 ul.hidden-links li {
   padding: 1rem;
   list-style: none;
@@ -131,6 +106,22 @@ ul.hidden-links li {
     margin-right: 32px;
     display: inline-block;
   }
+}
+
+ul.hidden-links li a {
+  font-size: 16px;
+  color: $color_nhsuk-white;
+  display: inline-block;
+  padding: 12px 0;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+ul.hidden-links.hidden {
+  display: none;
 }
 
 .greedy-nav__button--close {
