@@ -2,10 +2,13 @@
 @import 'node_modules/nhsuk-frontend/packages/nhsuk';
 
 .greedy {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
   position: relative;
   display: flex;
   align-items: center;
+
+  @include mq($from: tablet) {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
 }
 
 .greedy button {
