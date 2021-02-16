@@ -214,3 +214,9 @@ h1 + .nhsuk-lede-text--small {
     margin-bottom: nhsuk-spacing(3);
   }
 }
+
+.app-u-hide-on-tablet {
+  @include mq($from: tablet) {
+    display: none;
+  }
+}
