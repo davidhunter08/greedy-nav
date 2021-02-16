@@ -276,12 +276,17 @@ h1 + .nhsuk-lede-text--small {
 
   .autocomplete__menu {
     background: transparent;
+    padding-bottom: 32px;
   }
 
   .autocomplete__option {
     color: #ffffff;
     border-color: rgba(255, 255, 255, 0.2);
     text-decoration: none;
+  }
+
+  .autocomplete__option:nth-child(n+6) {
+    display: none;
   }
 
 }
