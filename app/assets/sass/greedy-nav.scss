@@ -228,7 +228,7 @@ h1 + .nhsuk-lede-text--small {
   .nhsuk-header__search {
     float: none;
     margin-left: 0;
-    margin-top: 16px;
+    margin-top: 20px;
     display: inline-block;
     width: 100%;
   }
@@ -252,6 +252,11 @@ h1 + .nhsuk-lede-text--small {
   .nhsuk-search__submit {
     height: 44px;
     background-color: #f0f4f5;
+    padding: 0;
+    width: 52px;
+    justify-content: center;
+    align-items: center;
+    display:flex;
 
     &:hover {
       background-color: #003d78;
@@ -263,8 +268,8 @@ h1 + .nhsuk-lede-text--small {
    }
 
    .nhsuk-icon__search {
-      height: 24px;
-      width: 24px;
+      height: 28px;
+      width: 28px;
       fill: #005eb8;
     }
   }
