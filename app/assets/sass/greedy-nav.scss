@@ -5,6 +5,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  padding: 4px 0;
 
   @include mq($from: tablet) {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -73,13 +74,12 @@ ul.links li a {
   color: $color_nhsuk-white;
   display: inline-block;
   margin: 0;
-  margin-right: 32px;
+  margin-right: 40px;
   text-decoration: none;
-  padding: 16px 0;
+  padding: 12px 0;
 
   @include mq($until: tablet) {
     margin-right: 24px;
-    padding: 12px 0;
   }
 
   &:hover {
@@ -110,7 +110,7 @@ ul.hidden-links li {
   margin: 0;
 
   @include mq($from: tablet) {
-    margin-right: 32px;
+    margin-right: 40px;
     display: inline-block;
   }
 }
@@ -233,7 +233,6 @@ h1 + .nhsuk-lede-text--small {
     width: 100%;
   }
 
-
   .nhsuk-header__search-wrap {
     display: block;
   }
@@ -243,9 +242,11 @@ h1 + .nhsuk-lede-text--small {
     padding: 0;
   }
 
-  .autocomplete__input {
+  .autocomplete__input,
+  .nhsuk-search__input {
     border: 0;
     height: 40px;
+    padding: 0 12px;
   }
 
   .nhsuk-search__submit {
@@ -270,7 +271,7 @@ h1 + .nhsuk-lede-text--small {
 
   .autocomplete__menu {
     background: transparent;
-    padding-bottom: 32px;
+    padding-bottom: 24px;
   }
 
   .autocomplete__option {
